@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.foods-section {
+    width: 92%;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.section-tag span {
+    padding: 8px 18px;
+    border: 2px solid #37c577;
+    border-radius: 18px;
+    font-size: 16px;
+    color: #37c577;
+    background: #eafff2;
+}
+
+.section-title {
+    font-size: 42px;
+    font-weight: 700;
+    margin: 20px 0 45px;
+}
+
+.foods-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 250px;
+    gap: 14px;
+}
+
+.food-item {
+    border: 2px solid #a5eebb;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* For text blocks */
+.text-box {
+    padding: 25px;
+    text-align: left;
+    background: #f5fff5;
+}
+
+.text-box h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.text-box p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* For image blocks */
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Button */
+.discover-btn {
+    border: 2px solid #37c577;
+    background: #eafff2;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.discover-btn:hover {
+    background: #37c577;
+    color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 850px) {
+    .foods-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+    .foods-grid {
+        grid-template-columns: 1fr;
+    }
+}
